@@ -47,7 +47,7 @@ public class ResultsPage extends BasePage {
     @ElementName(name = "Посмотреть все")
     public WebElement lookAll;
 
-    @FindBy(xpath = "//*[@id=\"__ozon\"]/div/div[1]/div[3]/div[2]/div[1]/div/aside/div[2]/div[2]/div[1]/input")
+    @FindBy(xpath = "(//input[@class='ui-av9 ui-av4'])[1]")
     @ElementName(name = "Найти бренды")
     public WebElement findBrands;
 
