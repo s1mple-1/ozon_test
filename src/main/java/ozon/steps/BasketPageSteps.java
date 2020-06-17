@@ -9,6 +9,9 @@ import ozon.basket.BasketData;
 import ozon.pages.BasePage;
 import ozon.pages.BasketPage;
 
+import java.io.IOException;
+import java.io.StringWriter;
+
 import static ozon.steps.BaseSteps.basePage;
 
 public class BasketPageSteps {
@@ -47,6 +50,17 @@ public class BasketPageSteps {
             Allure.addAttachment(product.getName(), product.toString());
         });
 
+        //json вариант
+//        StringWriter writer = new StringWriter();
+//        ObjectMapper mapper = new ObjectMapper();
+//        BasketData.getBasketData().forEach(product -> {
+//            try {
+//                mapper.writeValue(writer, product);
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
+//        });
+//        Allure.addAttachment("Товары", writer.toString());
     }
 
     @And("Вложение с наиболее дорогим товаром")
