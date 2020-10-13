@@ -18,7 +18,7 @@
         <allure.maven.version>2.10.0</allure.maven.version>
         <aspectj.version>1.9.5</aspectj.version>
         <selenium.java.version>3.141.59</selenium.java.version>
-        <junit.version>4.13</junit.version>
+        <junit.version>4.13.1</junit.version>
         <cucumber.java.version>5.6.0</cucumber.java.version>
         <cucumber.junit.version>5.6.0</cucumber.junit.version>
         <allure.cucumber5.jvm>2.13.3</allure.cucumber5.jvm>
